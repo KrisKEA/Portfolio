@@ -137,10 +137,17 @@ h3 {
 }
 #h1_2 {
     font-family: Quicksand;
-    margin-left: 27%;
+    margin-left: 30%;
     font-size: 20px;
     position: relative;
-    margin-top: -10%;
+    margin-top: 15%;
+}
+#h1_2k {
+  font-family: Quicksand;
+  margin-left: 30%;
+  font-size: 20px;
+  position: relative;
+  margin-top: 15%;
 }
 #h1_2o {
   font-family: Quicksand;
@@ -164,7 +171,37 @@ h3 {
     float: left;
     margin-top: 15%;
 }
-
+.h2_2k {
+  font-family: Quicksand;
+  margin-left: 30%;
+  position: relative;
+  float: left;
+  margin-top: 37%;
+}
+.h2_2k1 {
+  font-family: Quicksand;
+  margin-left: 55%;
+  position: relative;
+  margin-top: 5%;
+  
+}
+.h2_2k2 {
+  font-family: Quicksand;
+  margin-left: 61%;
+  position: relative;
+  margin-top: -52%;
+}
+.grid_2_2 p {
+  margin-left: 55%;
+}
+.grid_2_2 h3 {
+  margin-left: 55%;
+}
+.grid_2 iframe {
+  margin-top: -55%;
+  margin-left: 30%;
+  width: 70%;
+}
 .grid {
   margin-top: -80%;
   margin-left: 35%;
@@ -375,10 +412,14 @@ body {
     margin-left: 7%;
 }
 .img_koncept {
-    width: 50%;
-    height: 90%;
-    margin-left:23%;
-    margin-top: 10%;
+    width: 70%;
+    margin-left:10%;
+    margin-top:2%;
+}
+.img_pitch {
+  width: 35%;
+  margin-left: 55%;
+  margin-top: 3%;
 }
 .img_ny {
   width: 150%;
