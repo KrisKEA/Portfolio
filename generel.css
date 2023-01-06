@@ -1,127 +1,53 @@
-@media (max-width: 1500px) {
-  img {
-   padding: 2px;
-   max-width: 100%;
-   justify-content: space-between;
-    margin-top: 5em;
-   position: relative;
-  }
-  #trends h1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-row: 2;
-  font-size: 2cm;
-  font-family: rough love, sans-serif;
-  color: blue;
-  position: absolute;
-  }
-  #design h1 {
-  display: flex;
-  grid-template-columns: 1fr;
-  grid-row: 1;
-  font-size: 2cm;
-  font-family: rough love, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
-  color: blue;
-  position: relative;
-  }
-  .grid_2 img {
-  width: 5em;
-  position: relative;
-  border: 3px solid blue;
-  max-width: 100%;
-  }
-  .grid_2-1 img {
-    width: 10em;
-    position: relative;
-    border: 5px solid blue;
-    max-width: 100%;
-    justify-content: space-around;
-    
-    }
-  #slide {
-  width: 80%;
-  margin-top: 2em;
-  position: relative;
-  right: 150%;
-  animation: slide 3s infinite;
-  }
-  @keyframes slide {
-  0% {
-    right: -100%;
-  }
-  50% {
-    right: 40%;
-  }
-  70% {
-    right: 100%;
-  }
-  100% {
-    right: 300%;
-  }
-  }
-  #trends p {
-  color: black;
-  font-family: condor, bungee, sans-serif;
+a:link {
+  color: cornflowerblue;
+}
+a:visited {
+  color: darkgrey;
+}
+a:hover {
+  color: aliceblue;
+}
+a:active {
+  color: aliceblue;
+}
+Body {
+  background-color: lavender;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+}
+ul {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1 {
+  color: cornflowerblue;
+  font-size: xx-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-top-color: chocolate;
+  padding: 2rem;
+  border: 3px solid;
+  background-color: blanchedalmond;
+}
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: cornflowerblue;
+  font-size: larger;
+}
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  color: cornflowerblue;
+  font-size: larger;
+}
+header {
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+}
+main {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: medium;
-  position: relative;
-  border: 0.2em solid blue;
-  background-color: rgba(255, 255, 255, 0.759);
-  margin-right: 8%;
-  }
-  #design p {
-  color: black;
-  font-family: condor, bungee, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: medium;
-  position: relative;
-  border: 0.4em solid blue;
-  background-color: rgba(255, 255, 255, 0.759);
-  margin: 2em;
-  padding: 5em;
-  width: 100%;
-  }
-  .container {
-  color: black;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: medium;
-  }
-  header {
-  background-color: black;
-  background-size: 100%;
+}
+img {
+  border: 1px solid cornflowerblue;
   padding: 5px;
-  justify-content: space-between;
-  
-  }
-  .blink {
-  animation: blink 1.5s steps(1, end) infinite;
-  min-width: 50%;
   max-width: 100%;
-  position: relative;
-  width: 100%;
-  }
-  @keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-  }
-  .logo {
-  width: 10%;
-  margin-bottom: 2cm;
-  }
-  nav ul img {
-  list-style: none;
-  margin-top: auto;
-  }
-  a {
-  text-decoration: none !important;
-  display: inline-block;
-  }
+  border-radius: 20cm;
 }
