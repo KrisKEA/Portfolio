@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <title>Donut Saver</title>
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SPILLET</h1>
+      <nav>
+        <ul>
+          <li><a href="forside.html">FORSIDE</a></li>
+          <li><a href="spil.html">SPIL</a></li>
+          <li><a href="ide.html">IDE</a></li>
+          <li><a href="teknik.html">TEKNIK</a></li>
+          <li><a href="grafik.html">GRAFIK</a></li>
+          <li><a href="assets.html">ASSETSLISTE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="game_background">
+          
+            <div id="game_elements">
+              <div id="meteorone_container">
+                <div id="meteorone_sprite" class="fade_in pos1"></div>
+                
+              </div>
+              <div id="meteortwo_container">
+                <div id="meteortwo_sprite" class="fade_in pos6"></div>
+               
+              </div>
+              <div id="orangekrymmel_container">
+                <div id="orangekrymmel_sprite" class="fade_in pos2"></div>
+                
+              </div>
+              <div id="blaakrymmel_container">
+                <div id="blaakrymmel_sprite" class="fade_in pos3"></div>
+                
+              </div>
+            </div>
+            <div id="game_ui">
+              <div id="points">0</div>
+              <div id="lives">3</div>
+              <div id="tid" class=""></div>
+            </div>
+          </div>
+        </div>
+        <div id="start">
+          <div id="playnow_btn" class="pulse"></div>
+        </div>
+        <div id="game_over">
+          <div id="tryagain_btn" class="pulse"></div>
+          
+        </div>
+        <div id="level_complete">
+          <div id="tryagain2_btn" class="pulse"></div>
+          
+        </div>
+      </div>
+      <script src="donut.js"></script>
+    </main>
+  </body>
+  <audio id="yay" src="../Website/lyd/yay-6120.mp3" controls></audio>
+  <audio id="levelcomplete" src="../Website/lyd/level-completed-90734.mp3" controls></audio>
+  <audio id="gameover" src="../Website/lyd/negative_beeps-6008.mp3" controls></audio>
+  <audio id="explosion" src="../Website/lyd/explosion-91004 1.mp3" controls></audio>
+   <audio id="baggrundsmusik" src="../Website/lyd/andrew-kn-at-the-edge-of-space-ii-17019(1).mp3" controls></audio>
+  <footer>Kristines`Donut Saver`game</footer>
+</html>

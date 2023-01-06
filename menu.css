@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 150%;
+  
+}
+#logo {
+  border-radius: 20px;
+}
+#logo img {
+  width: 70px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3em;
+  padding: 2em 2em 1em 1em;
+  padding-left: 7cm;
+  margin-right: 2cm;
+  margin-left: 2cm;
+  background-size: cover;
+  font-size: 100%;
+}
+a:link {
+  color: rgb(158, 254, 62);
+}
+a:visited {
+  color: rgb(158, 254, 62);
+}
+a:hover {
+  color: rgb(158, 254, 62);
+}
+a:active {
+  color: rgb(158, 254, 62);
+}
+a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+}
