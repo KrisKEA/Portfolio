@@ -103,7 +103,7 @@ h1 {
   font-size: 45px;
   margin-top: 20%;
   margin-left: 7%;
-  font-family: Arimo;
+  font-family: josefin_sans;
   color: white;
 }
 .h1_2f {
@@ -118,10 +118,9 @@ h1 {
   font-size: 40px;
   margin-top: -52%;
   margin-left: 130%;
-  font-family: Arimo;
-  border-style: solid;
-  background-color: white;
-  width: 8%;
+  font-family: josefin_sans;
+  color: white;
+  text-align: center;
 }
 a{
   text-decoration: none;
@@ -320,16 +319,19 @@ p {
 footer div {
     color: black;
     font-family: Quicksand;
-    justify-content: space-between;
-    padding: 3%;
+    justify-content: space-around;
+    display: flex;
+    gap: 5px;
+    margin: 40px;
     
 }
 footer div1 {
   color: white;
   font-family: Quicksand;
-  justify-content: space-between;
-  margin-left: 5%;
-  
+  justify-content: space-around;
+  display: flex;
+  gap: 5px;
+  margin: 40px;
 }
 .body1 {
   background-color: #131FF2;
