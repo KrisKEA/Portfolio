@@ -126,9 +126,6 @@ a{
   text-decoration: none;
   color: black;
 }
-.grid_5 h3 {
-  margin-top: -114%;
-}
 h3 {
     font-family: Quicksand;
     font-size: 20px;
@@ -158,11 +155,11 @@ h3 {
   
 }
 .h2_1 {
-    font-family: Quicksand;
-    margin-bottom: 5%;
-    margin-left: 31%;
-    position: relative;
-    font-size: 20px;
+  font-family: Quicksand;
+  margin-top: -20%;
+  margin-left: 37%;
+  position: relative;
+  font-size: 20px;
 }
 .h2_2 {
     font-family: Quicksand;
@@ -198,7 +195,7 @@ h3 {
   margin-left: 55%;
 }
 .grid_2 iframe {
-  margin-top: -55%;
+  margin-top: 15%;
   margin-left: 30%;
   width: 70%;
 }
@@ -294,14 +291,16 @@ p {
  
 }
 .col_3-4 p {
-  margin-left: 30%;
+  margin-left: 37%;
   text-align: justify;
 }
 .col_3-4 h3 {
-  margin-left: 30%;
+  margin-left: 37%;
 }
+
 .col_3-4 iframe {
-  margin-left: 31%;
+  margin-left: 37%;
+  margin-top: -10%;
 }
 .col_1-2 p {
   margin-top: 5%;
@@ -327,7 +326,7 @@ p {
   margin-left: 30%;
 }
 .grid_1-1 iframe {
-  margin-top: 36%;
+  margin-top: 30%;
 }
 .k {
   color: white;
@@ -440,31 +439,32 @@ body {
 }
 .img_lm {
   width: 100%;
-  margin-left: -65%;
-  margin-top: -196%;
+  margin-left: -75%;
+  margin-top: -170%;
   border-radius: 10%;
   color: black;
   border-style: solid;
 }
 .img_roset {
   width: 100%;
-  margin-left: -65%;
-  margin-top: -135%;
+  margin-left: -75%;
+  margin-top: -115%;
   border-radius: 10%;
   color: black;
   border-style: solid;
 }
 .img_støvle {
   width: 100%;
-  margin-left: -65%;
-  margin-top: -76%;
+  margin-left: -75%;
+  margin-top: -60%;
   border-radius: 10%;
   color: black;
   border-style: solid;
 }
 .grid_5 h3 {
-  margin-left: -30%;
-  margin-top: -207%;
+  margin-top: -175%;
+  margin-left: -42%;
+  
 }
 .img_skitse {
   width: 90%;
@@ -473,7 +473,7 @@ body {
   color: black;
   border-style: solid;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 .img_mobil {
   width: 90%;
@@ -485,7 +485,7 @@ body {
 }
 .img_pilot {
   width: 50%;
-  margin-top: -21%;
+  margin-top: -14%;
   margin-left: 28%;
   border-radius: 10%;
   color: black;
