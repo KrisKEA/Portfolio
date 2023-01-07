@@ -149,7 +149,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
- 
+
   .col_0 .d1 {
     grid-column: 1;
 
