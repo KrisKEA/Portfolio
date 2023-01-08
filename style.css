@@ -29,7 +29,7 @@
 }
 .nav-link1 {
   text-decoration: none;
-  color:white;
+  color:black;
   font-size: 20px;
   font-family: "Quicksand";
   transition: all 0.3s;
@@ -45,6 +45,28 @@
     align-items: center;
     justify-content: space-between;
     background-color:blue;
+  }
+  /* ––––––––––––––––––– Dropdown menu ––––––––––––––––––– */
+  .dropdown_menu {
+  display: none;
+
+  }
+  .navbar1 ul li:hover .dropdownmenu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  
+  }
+  .navbar ul li:hover .dropdown_menu ul {
+  display: block;
+  margin: 10px;
+
+  }
+  .navbar ul li:hover i.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+  
   }
   /* selve logoet */
   nav .logo {
@@ -69,7 +91,7 @@
   /* styling af tekst i navigationslinjen */
   .nav-link {
     text-decoration: none;
-    color:white;
+    color:black;
     font-size: 20px;
     font-family: "Quicksand";
     transition: all 0.3s;
@@ -81,9 +103,10 @@
 .hamburger {
     display: none;
     cursor: pointer;
+    
 }
 .bar {
-     display: block;
+    display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
@@ -166,8 +189,9 @@ h3 {
     margin-left: 30%;
     position: relative;
     float: left;
-    margin-top: 15%;
+    margin-top: 5%;
 }
+
 .h2_2k {
   font-family: Quicksand;
   margin-left: 30%;
@@ -354,10 +378,20 @@ p {
   margin-left: 5%;
 }
 .col_1-1-1 p{
-  margin-left: 5%;
+  margin-left: 10%;
   margin-top: 5%;
   line-height: 1.7em;
+  padding-right: 4%;
 }
+.col_1-1-1 h3{
+  margin-top: 15%;
+  margin-left: 29%;
+}
+.col_1-1-1 h4{
+  margin-top: -30%;
+  margin-left: 100%;
+}
+
 .grid_2-3 p {
   margin-top: 5%;
   margin-left: 5%;
@@ -392,6 +426,16 @@ body {
 }
 .col_1-1-1-1-1-1 p:hover{
   transform: scale(1.1);
+}
+.col_6 h1 {
+  margin-top: 35%;
+  margin-left: 30%;
+}
+.col_6 p {
+  margin-top: 10%;
+  margin-left: 30%;
+  padding-right: 4%;
+  line-height: 1.7em;
 }
 /*-------------BILLEDER-------------*/
 .img_cv {
@@ -443,9 +487,6 @@ body {
   position: relative;
   margin-left: 10%;
   margin-top: 6%;
-  border-radius: 2%;
-  color: black;
-  border-style: solid;
 }
 .img_lm {
   width: 100%;
@@ -477,13 +518,11 @@ body {
   
 }
 .img_skitse {
-  width: 90%;
+  width: 80%;
   position: relative;
-  border-radius: 10%;
-  color: black;
-  border-style: solid;
   margin-left: 10%;
-  margin-top: 20%;
+  margin-top: 8%;
+  height: 25%;
 }
 .img_mobil {
   width: 90%;
@@ -514,6 +553,33 @@ body {
   margin-left: -35%;
   margin-top: 20%;
 }
+.img_aktiv {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+.img_state {
+  width: 100%;
+  margin-left: -10%;
+  margin-top: 5%;
+}
+.img_ele {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 45%;
+}
+.img_bag {
+  width: 90%;
+  height: 55%;
+  margin-left: 100%;
+  margin-top: -36.5%;
+}
+.img_java {
+  width: 50%;
+  margin-top: 10%;
+  margin-left: -16%;
+}
 /* ---------------ANIMATIONER------------- */
 .slide_left {
   width: 100%;
@@ -531,7 +597,43 @@ body {
     width: 100%;
   }
 }
-
+/* – Responsiv ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */ 
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  /* laver 3 streger til et kryds */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    /* så man ikke kan se menuen før den åbnes */
+    right: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    /* Tiden det tager at åbne burgermenuen */
+    transition: 0.3s;
+  }
+  /* laver afstand mellem links i burgermenu */
+  .nav-item {
+    margin: 16px 0;
+  }
+  /* viser menuen når den åbnes */
+  .nav-menu.active {
+    right: 0;
+  }
+}
 
 
 

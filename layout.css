@@ -28,6 +28,11 @@
   .col_2 h2 {
     grid-column: 1;
   }
+  .col_6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .col_1-1-1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
