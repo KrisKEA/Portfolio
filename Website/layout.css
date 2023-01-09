@@ -1,0 +1,135 @@
+main {
+  margin: 0;
+}
+@media (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  nav ul {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 2cm;
+    margin-right: 2cm;
+    grid-column: 5;
+  }
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1cm;
+  }
+  #forside .grid_1-1 img {
+    grid-column: 1/2;
+    grid-row: 1/6;
+  }
+  #forside .grid_1-1 h2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+  #forside .grid_1-1 p {
+    grid-column: 2/2;
+    grid-row: 3;
+  }
+  #forside .grid_1-1 dl {
+    grid-column: 2/3;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+    grid-row: 4;
+  }
+  #min_computer .grid_1-1 h2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/2;
+  }
+  #min_computer .grid_1-1 p {
+    grid-column: 2/2;
+    grid-row: 2;
+  }
+  #min_computer .grid_1-1 ul {
+    display: grid;
+    list-style: none;
+    grid-column: 2/3;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 4;
+    gap: 3em;
+  }
+  #min_computer .grid_1-1 img {
+    grid-column: 1/1;
+    grid-row: 1/6;
+  }
+  #operativsystemer .grid_5-3 h2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 1/2;
+  }
+  #operativsystemer .grid_1-1 p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 2em;
+  }
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2em;
+  }
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2em;
+    margin-top: 1cm;
+  }
+  .order {
+    order: -1;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex_col img:last-child {
+    margin-top: auto;
+  }
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+  }
+  #img_1 {
+    grid-column: span 2;
+    grid-row: 1 / span 2;
+  }
+  #img_2 {
+    grid-column: span 1;
+  }
+  #img_3 {
+    grid-column: span 1;
+  }
+  #img_4 {
+    grid-column: span 2;
+  }
+  #img_5 {
+    grid-column: span 1;
+  }
+  #img_6 {
+    grid-column: span 3;
+  }
+}
