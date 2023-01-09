@@ -32,7 +32,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   .col_1-1-1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -163,7 +162,6 @@
     grid-column: 3;
 
   }
-
   .img_skitse {
     grid-column: 1;
   }
