@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* hele navigations linjen m. logo */
+.navbar {
+  width: 100%;
+  padding: 5px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ded7c9;
+}
+/* selve logoet */
+nav .logo {
+  /* angiver størrelsen */
+  width: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 40px;
+  margin: 0 40px;
+}
+
+/* links i navigationslinjen */
+.nav-item {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  position: relative;
+}
+/* styling af tekst i navigationslinjen */
+.nav-link {
+  text-decoration: none;
+  color: #a69278;
+  font-size: 20px;
+  font-family: "Oswald";
+
+  transition: all 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #78a99b;
+}
+/* ––––––––––––––––––– Dropdown menu ––––––––––––––––––– */
+.dropdown_menu {
+  display: none;
+}
+.navbar ul li:hover .dropdown_menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #ded7c9;
+}
+.navbar ul li:hover .dropdown_menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.navbar ul li:hover i.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+/* ––––––––––––––––––– Burger menu ––––––––––––––––––– */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #a69278;
+}
+
+/* ––––––––––––––––––– søg og kurv ––––––––––––––––––– */
+.søg,
+.kurv {
+  aspect-ratio: 86/96;
+  height: 35px;
+  margin: 20px;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Responsiv ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  /* laver 3 streger til et kryds */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    /* så man ikke kan se menuen før den åbnes */
+    right: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--lysbrun);
+    width: 30%;
+    text-align: center;
+    /* Tiden det tager at åbne burgermenuen */
+    transition: 0.3s;
+  }
+  /* laver afstand mellem links i burgermenu */
+  .nav-item {
+    margin: 16px 0;
+  }
+  /* viser menuen når den åbnes */
+  .nav-menu.active {
+    right: 0;
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Footer –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  background-color: var(--lysbrun);
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 2fr;
+  padding: 30px;
+  overflow: hidden;
+}
+footer h3 {
+  color: var(--brun);
+}
+.footer_kategorier li {
+  list-style: none;
+}
+.footer_kategorier a {
+  text-decoration: none;
+  color: var(--brun);
+  font-family: "OpenSans";
+}
+.SoMe-illustrationer a {
+  text-decoration: none;
+}
+.SoMe-illustrationer img {
+  max-width: 40px;
+}
+.footer_billede {
+  grid-area: 1/ 4/ 1/ 5;
+  width: 100px;
+  height: auto;
+  justify-self: center;
+}
+.footer_BHH {
+  grid-area: 1/ 5/ 1/ 7;
+}
+.footer_BHH p {
+  color: var(--brun);
+}

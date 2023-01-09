@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.01 161.01">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #78a99b;
+        stroke: #78a99b;
+      }
+    </style>
+  </defs>
+  <g id="stop">
+    <path id="Path_1" data-name="Path 1" class="cls-2" d="M.5,87.08v-13.15C.5,33.38,33.37,.5,73.93,.5h122.15c40.55,0,73.43,32.87,73.43,73.43h0v13.15c0,40.55-32.87,73.43-73.43,73.43H73.93c-40.55,0-73.43-32.87-73.43-73.43H.5Z"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" x="81.5" y="25.01" width="107" height="111"/>
+  </g>
+</svg>

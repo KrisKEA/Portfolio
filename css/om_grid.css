@@ -1,0 +1,109 @@
+/*----om.mig------*/
+.grid_2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
+}
+
+.img1 {
+    grid-column: 2;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* --------------Video og tekst--------------------------- */
+.grid_1-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+#video_container {
+    width: 100%;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#video_file {
+    object-fit: cover;
+    max-width: 100%; 
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+#bag_container {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.flex-container {
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items:baseline;
+gap: 10px;
+height: fit-content;
+}
+
+#volume_container {
+    width: 10%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#play {
+    background-repeat: no-repeat;
+    background-image: url(../components/play.svg);
+    display: inline-block;
+    padding: 14px 0;
+    width: 70px;
+
+}
+#stop {
+    background-repeat: no-repeat;
+    background-image: url(../components/stop.svg);
+    display: inline-block;
+    padding: 14px 0;
+    width: 70px;
+}
+.grid_2-2 p {
+    margin: 20px;
+    gap: 3px;
+}
+.grid_1-2 p {
+    margin: 20px;
+    gap: 3px;
+}
+.grid_1-2 h3 {
+    margin: 20px;
+    gap: 3px;
+}
+h2 {
+    margin: 20px;
+    gap: 3px;
+}
+
+/* --------------Billeder--------------------------- */
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+.img4 {
+    grid-column: 1;
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+}
+.img5 {
+    grid-column: 2;
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+}
+.img6 {
+    grid-column: 3;
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+}

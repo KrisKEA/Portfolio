@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --lysbrun: #ded7c9;
+  --brun: #a69278;
+  --lystyrkis: #c8ddd7;
+  --tyrkis: #78a99b;
+}
+
+/* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
+@font-face {
+  font-family: "Aclonica";
+  src: url("../fonte/Aclonica-Regular.ttf");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonte/Oswald.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonte/OpenSans-Regular.ttf");
+}
+/* –––––––––––––––––––––– Typografier –––––––––––––––––––––– */
+
+h1 {
+  font-family: "Oswald";
+  color: white;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "Oswald";
+  color: white;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "Oswald";
+  color: white;
+  font-size: 20px;
+}
+
+p {
+  font-family: "OpenSans";
+  color: white;
+  font-size: 16px;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Main ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+  background-color: white;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*------banner container------*/
+
+.wrapper {
+  background: url(../billeder/blandet_vaser.JPG) no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.wrapper .center {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+.center h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  width: 900px;
+  text-align: center;
+}
+
+.i_ovnen {
+  background-color: #c8ddd7;
+}
