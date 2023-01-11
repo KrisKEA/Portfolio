@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/layout.css">
-    <link rel="icon" type="image/svg+xml" href="../billeder/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../komponenter/favicon(1).svg">
     <title>TEMA 4</title>
 </head>
 <body>
@@ -44,7 +44,6 @@
     </header>
     <main>
     <h1 class="h1_s">TEMA 4 - GRUNDLÆGGENDE ANIMATION</h1>
-    </div>
     <section class="col_1-1-1">
     <div>
     <p>I Tema 4 kiggede vi på animation. 
@@ -62,21 +61,30 @@
       <img class="spil" src="../billeder/spil.png" alt="logo">
     </a>
     </div>
-    <div>
+    <div class="dia4">
     <h2 class="h2_2">SPIL IDÉ</h2>
+    <h3>Skitsering</h3>
+    <img class="img_skitse2" alt="skitse" src="../spil/Website/Dokumentation/proto1.jpg">
     <h3>Papirprototype</h3>
     <img class="img_skitse" alt="skitse" src="../spil/Website/Dokumentation/proto2.jpg">
     <p>I idefasen blev vi præsenteret for udvalgte stilarter. 
-        Dette dannede grundlag for, de angivne stile der er valgt.
+        Dette dannede grundlag for, den angivne stil der er valgt.
+        Her valgte jeg, at gå med stilarten ´Space´, da den så ligetil ud. 
         Ud fra den valgte stilart, skulle der begives ud i udvikling af skærme og figur/elementer.
-        Beslutning om henholdsvis gode og dårlige elementer i vores eget spil. 
+        Her søgte jeg lidt rundt, for at finde inspiration til min figur. 
+        Skærme designede jeg, udfra hvad jeg har set af space ligende spil mm. 
+        Vi skulle dertil også beslutte henholdsvis gode og dårlige elementer i vores eget spil. 
     </p>
     </div>
-    <div>
+    <div class="dia4">
     <h2 class="h2_2">DIAGRAMMER</h2>  
     <h3>Aktivitetsdiagram</h3>
     <img src="../spil/Website/Dokumentation/donutsaver.drawio.png" alt="aktivitet" class="img_aktiv">
     <p>Aktivitetsdiagram over handlingerne og forløbet i spillet Donut Saver.
+        Her ser vi et klart overblik, over hvilke handlinger der finder sted. 
+        Du ved herefter, hvad der er de gode og de dårlige elementer i spillet.
+        Dertil også, hvad man skal gøre for at få point og vinde i sidste ende.
+
     </p>
     <h3>Statemachinediagram</h3>
     <img src="../spil/Website/Dokumentation/Kristine_statemaschine.png" alt="state" class="img_state">
@@ -87,16 +95,29 @@
         <img src="../spil/Website/elementer.png" alt="elementer" class="img_ele">
         <img src="../spil/Website/baggrunde.png" alt="baggrunde" class="img_bag">
     </div>
-</section>
+    </section>
     <div>
-        <h2 class="h2_2">JAVASCRIPT</h2>
+        <h2 class="h2_24">JAVASCRIPT</h2>
+        <p class="spil4">Til at kode spillet, skulle der bruges Javascript.
+            Det var første introduktion til, at kode Javascript, og det var ikke uden problemer undervejs.
+            I Javascript kan man addeér klasser, og fjerne dem igen. Altså, at tilføje et event. 
+            Til at begynde med, kaldes en bestemt funktion. I dette tilfælde ´klikMeteor.´
+            Dernæst kan vi med en document.querySelector, vælge en bestemt container (#meteorone_container). 
+            Denne kan du nu fjerne med en removeEventListener med efterfølgende ("mousedown", klikMeteor).
+            Efter dette, skal en classList tilføjes, for at få en ´forsvind´ animation på. 
+            Dette lægges på (#meteorone_sprite) og gives ved classList.add ("forsvind").
+            Sidst skal en event tillægges igen, så animationen slutter.
+            Dette gøres med en addEventlistener, og skrives ("#meteorone_container") .addEventlistener ("animationend", restartMeteor).
+        </p>
         <img src="../spil/Website/java.png" alt="java" class="img_java">
     </div>
-   
-    
-</main>
-  </body>
- 
-<script src="../css/port.js"></script>
-
+    </main>
+    <script src="../css/port.js"></script>
+    <footer>
+        <div>
+        Kristine Tanderup Krause
+        <strong>/ Multimediedesign</strong>
+        </div>
+    </footer>
 </body>
+</html>
