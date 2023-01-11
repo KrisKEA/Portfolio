@@ -1,135 +1,341 @@
-main {
-  margin: 0;
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  
 }
-@media (min-width: 1000px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-  }
-  nav ul {
-    list-style: none;
-    justify-content: space-between;
-    display: flex;
-    padding-left: 2cm;
-    margin-right: 2cm;
-    grid-column: 5;
-  }
-  .grid_2-1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1em;
-  }
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1cm;
-  }
-  #forside .grid_1-1 img {
-    grid-column: 1/2;
-    grid-row: 1/6;
-  }
-  #forside .grid_1-1 h2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 2/3;
-    grid-row: 2;
-  }
-  #forside .grid_1-1 p {
-    grid-column: 2/2;
-    grid-row: 3;
-  }
-  #forside .grid_1-1 dl {
-    grid-column: 2/3;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5em;
-    grid-row: 4;
-  }
-  #min_computer .grid_1-1 h2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 2/2;
-  }
-  #min_computer .grid_1-1 p {
-    grid-column: 2/2;
-    grid-row: 2;
-  }
-  #min_computer .grid_1-1 ul {
-    display: grid;
-    list-style: none;
-    grid-column: 2/3;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row: 4;
-    gap: 3em;
-  }
-  #min_computer .grid_1-1 img {
-    grid-column: 1/1;
-    grid-row: 1/6;
-  }
-  #operativsystemer .grid_5-3 h2 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column: 1/2;
-  }
-  #operativsystemer .grid_1-1 p {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .grid_5-3 {
-    display: grid;
-    grid-template-columns: 5fr 3fr;
-    gap: 2em;
-  }
-  .grid_2-3 {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 2em;
-  }
-  .grid_3-2 {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 2em;
-    margin-top: 1cm;
-  }
-  .order {
-    order: -1;
-  }
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-  }
-  .flex_col {
-    display: flex;
-    flex-direction: column;
-  }
-  .flex_col img:last-child {
-    margin-top: auto;
-  }
-  .grid_1-1-1-1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2em;
-  }
-  #img_1 {
-    grid-column: span 2;
-    grid-row: 1 / span 2;
-  }
-  #img_2 {
-    grid-column: span 1;
-  }
-  #img_3 {
-    grid-column: span 1;
-  }
-  #img_4 {
-    grid-column: span 2;
-  }
-  #img_5 {
-    grid-column: span 1;
-  }
-  #img_6 {
-    grid-column: span 3;
-  }
+nav ul {
+  display:flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding-left: 2cm;
+  margin-right: 2cm;
+  font-family: Peralta-regular;
+  
 }
+p {
+  font-family: Peralta-regular;
+  font-size: large;
+  margin-left: 1.3cm;
+  color: rgb(85, 85, 94);
+}
+h1 {
+  font-family: Peralta-regular;
+  color: rgb(85, 85, 94);
+
+}
+h2 {
+  font-family: Peralta-regular;
+  font-size: larger;
+  color: rgb(85, 85, 94);
+}
+h3 {
+  font-family: Peralta-regular;
+  font-size: smaller;
+  color: rgb(85, 85, 94);
+}
+
+#img1 {
+  margin: 5%;
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+}
+#img2 {
+  margin: 5%;
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+a:link {
+  color: rgb(19, 67, 156);
+}
+a:visited {
+   color: rgb(11, 17, 65);
+}
+a:hover {
+   color: rgb(15, 136, 242);
+}
+a:active {
+   color: rgb(20, 133, 232);
+ }
+/* -------------------*/
+
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url("../Website/Assetsliste/playsite.svg");
+  background-size: cover;
+ 
+}
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  pointer-events: none;
+}
+
+#tid {
+  position: absolute;
+  width: 12%;
+  height: 2%;
+  border: 1px solid black;
+  background-color: aliceblue;
+  top: 7%;
+  left: 84%;
+  transform-origin: bottom center;
+}
+@font-face {
+  font-family: Permanent_Mark-regular;
+  src: url(../Website/PermanentMarker-Regular.ttf);
+}
+@font-face {
+  font-family: Peralta-regular;
+  src: url(../Website/Peralta-Regular.ttf);
+}
+#lives {
+  position: absolute;
+  width: 3%;
+  height: 5%;
+  left: 8%;
+  top: 1%;
+  color:aliceblue;
+  font-family: Permanent_Mark-regular;
+  src: url(../Website/PermanentMarker-Regular.ttf);
+}
+#points {
+  position: absolute;
+  background-color:rgb(13, 13, 135);
+  width: 5%;
+  height: 5%;
+  left: 93%;
+  top: 0%;
+  color: white;
+  font-family: Permanent_Mark-regular;
+  src: url(../Website/PermanentMarker-Regular.ttf);
+}
+
+/*--------game elements--------*/
+
+#meteorone_container {
+  position: absolute;
+  aspect-ratio: 16/9;
+  width: 10%;
+}
+#meteorone_sprite {
+  background-image: url("../Website/Assetsliste/1meteor.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+#meteortwo_container {
+  position: absolute;
+  aspect-ratio: 16/9;
+  width: 10%;
+}
+#meteortwo_sprite {
+  background-image: url("../Website/Assetsliste/2meteor.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+#orangekrymmel_container {
+  position: absolute;
+  aspect-ratio: 16/9;
+  width: 10%;
+}
+#orangekrymmel_sprite {
+  background-image: url("../Website/Assetsliste/orangekrymmel.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+#blaakrymmel_container {
+  position: absolute;
+  aspect-ratio: 16/9;
+  width: 8%;
+}
+#blaakrymmel_sprite {
+  background-image: url("../Website/Assetsliste/blaakrymmel.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+/*---------pos---------*/
+.pos1 {
+  left: 40%;
+  top: 20%;
+}
+.pos2 {
+  left: 76%;
+  top: 55%;
+}
+.pos3 {
+  left: 70%;
+  top: 32%;
+}
+.pos4 {
+  left: 7%;
+  top: 15%;
+}
+.pos5 {
+  left: 30%;
+  top: 57%;
+}
+.pos6 {
+  left: 80%;
+  top: 48%;
+}
+
+/* --------------------*/
+
+#start {
+  background-image: url("../Website/Assetsliste/startside.svg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-size: cover;
+  /* aspect-ratio: 16/9; */
+  
+}
+#game_over {
+  background-image: url("../Website/Assetsliste/oh\ no.svg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  aspect-ratio: 16/9;
+  background-size: cover;
+} 
+#level_complete {
+  background-image: url("../Website/Assetsliste/congrats.svg");
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  aspect-ratio: 16/9;
+  background-size: cover;
+}
+/*------------------*/
+#playnow_btn {
+  background-image: url("../Website/Assetsliste/playnow.svg");
+  width: 10%;
+  height: 10%;
+  /* background-repeat: no-repeat; */
+  position: absolute;
+  top: 53%;
+  left: 46%;
+}
+#tryagain_btn {
+  background-image: url("../Website/Assetsliste/tryagain.svg");
+  width: 10%;
+  height: 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 73%;
+  left: 35%;
+}
+#tryagain2_btn {
+  background-image: url("../Website/Assetsliste/tryagain.svg");
+  width: 10%;
+  height: 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 73%;
+  left: 35%;
+} 
+.hide {
+  display: none;
+}
+/*-----teknik-------*/
+#aktivitet {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 400px;
+  height: 350px;
+  width: 600px;
+  margin-top: 30px;
+}
+#state {
+  display: flex;
+  margin-left: 60px;
+  margin-right: 40px;
+  height: 500px;
+  width: 500px;
+  margin-top: 100px;
+}
+
+/*------grafik---------*/
+
+.screendumps {
+  margin: 2%;
+  padding: 2%;
+  display: flex;
+}
+#doku {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 250px;
+  width: 300px;
+  margin-top: 30px;
+  border: 5px solid cornflowerblue;
+}
+#doku2{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 35px;
+  height: 250px;
+  width: 300px;
+  margin-top: 30px;
+  border: 5px solid cornflowerblue;
+}
+#doku3{
+  display: flex;
+  margin-left: -695px;
+  margin-right: 350px;
+  height: 250px;
+  width: 300px;
+  margin-top: 330px;
+  border: 5px solid cornflowerblue;
+}
+#doku4{
+  display: flex;
+  margin-left: -290px;
+  margin-right: 400px;
+  height: 250px;
+  width: 300px;
+  margin-top: 330px;
+  border: 5px solid cornflowerblue;
+}
+
