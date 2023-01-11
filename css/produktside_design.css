@@ -165,17 +165,20 @@ body {
   text-align: center;
   color: white;
   font-size: 30px;
+  width: 100vh;
 }
 .boks_med_text-2 {
   background-color:#ded7c9;
   text-align: center;
   color:#a69278;
-  height: 100px;
+  height: 10px;
   padding: 25px;
 }
 .boks_med_text-2  h2 {
 color: white;
+
 }
+
 /* –––––––––––––––––––––––––––––––––––––––Knapper––––––––––––––––––––––––––––––––––––––– */
 
 .tyrkis_knap {
