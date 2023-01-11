@@ -4,41 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dressur</title>
-    <link rel="stylesheet" href="passion.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="icon" type="image/svg+xml" href="../komponenter/favicon(1).svg">
+    <title>FORSIDE</title>
 </head>
-<header>
-    <nav>
-        <ul>
-          <li><a href="index.html">Forsiden</a></li>
-          <li><a href="billeder.html">Billeder</a></li>
-          <li><a href="video.html">Videoen</a></li>
-          <li><a href="layout.html">Layoutdiagram</a></li>
-        </ul>
-      </nav>
-</header>
-<body>
-    <h1>EN PASSIONERET VERDEN</h1>
-    <h2>I DRESSURENS ÅND</h2>
-<main>
-    <section class="grid_4">
-    <h3>Laura's passion</h3>
-    <section id="debate">
-        <div id="video_container">
-            <div id="volume_container">
-            <input id="volControl" class="slider" type="range" min="1" max="100" value="50">
-        </div>
-        <video id="video_file">
-            <source src="../video.mp4" type="video/mp4">
-        </video>
-        <div id="controls">
-            <div id="play"></div>
-            <div id="stop"></div>
-         </div>
+<body class="body1">
+    <header>
+        <nav class="navbar1">
+            <a href="index.html">
+                <img class="logo" src="../billeder/Logo.png" alt="logo">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link1" href="om.html">OM MIG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link1" href="projekter.html">PROJEKTER</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+        </nav>
+    </header> 
+    <main>
+    <div class="slide_left">
+        <h1 class="k">
+            <strong><em>KRISTINE TANDERUP</em></strong></h1>
+        <h1 class="k2"><strong>KRAUSE</strong></h1>
     </div>
+    <section class="col_2">
+    <h2 class="h1_f">Velkommen til min portfolio!</h2>
+    <h3><em>MULTIMEDIEDESIGN</em></h3>
+    <br>
+    <h2 class="h2_f">K<br>S<br>T<br>U<br>D<br>I<br>O<br>S</h2>
     </section>
-    </section>
-</main>
-<script src="passion.js"></script>
+    </main>
+    <footer>
+        <div>
+        Kristine Tanderup Krause
+        <strong>/ Multimediedesign</strong>
+        </div>
+    </footer>
+<script src="../css/port.js"></script>
 </body>
 </html>
